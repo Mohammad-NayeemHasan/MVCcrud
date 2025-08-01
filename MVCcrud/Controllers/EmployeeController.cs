@@ -58,6 +58,8 @@ namespace MVCcrud.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        //Ahsaskfkdfk
+        //adkfkd
         public async Task<IActionResult> Create([Bind("Id,Name,Salary,DepartmentId")] Employee employee)
         {
             if (ModelState.IsValid)
