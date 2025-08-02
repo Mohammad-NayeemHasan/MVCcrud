@@ -58,6 +58,8 @@ namespace MVCcrud.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        //Ahsaskfkdfk
+        //adkfkd
         public async Task<IActionResult> Create([Bind("Id,Name,Salary,DepartmentId")] Employee employee)
         {
             if (ModelState.IsValid)
@@ -159,11 +161,13 @@ namespace MVCcrud.Controllers
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
+            //Add Comment 
         }
 
         private bool EmployeeExists(int id)
         {
             return _context.Employees.Any(e => e.Id == id);
+            Console.WriteLine( "Hello from Namyeem");
         }
     }
 }
